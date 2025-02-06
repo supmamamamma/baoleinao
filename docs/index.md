@@ -15,6 +15,7 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
 !!! note "这是你们"
 
 	图片测试 ![te](img/logan.png){ loading=lazy }
