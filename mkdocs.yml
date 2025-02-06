@@ -12,7 +12,6 @@ theme:
     - search.suggest
     - content.code.copy
     - navigation.top
-    - navigation.indexes
   palette: 
 
     - media: "(prefers-color-scheme)"
