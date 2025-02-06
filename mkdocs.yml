@@ -12,6 +12,7 @@ theme:
     - search.suggest
     - content.code.copy
     - navigation.top
+    - toc.integrate
   palette: 
 
     - media: "(prefers-color-scheme)"
@@ -58,3 +59,6 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
