@@ -18,6 +18,6 @@ For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 !!! note "这是你们"
 
-    我不知道buu
+	图片测试 ![te](img/logan.png){ loading=lazy }
 
 
