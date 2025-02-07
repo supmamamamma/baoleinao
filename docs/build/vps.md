@@ -297,6 +297,151 @@ fnm install 22
 #### 2.3.1 部署酒馆
 
 跟随官方文档, 使用git命令克隆即可
+使用命令:
+```
+git clone https://github.com/SillyTavern/SillyTavern -b release
+```
+
+或:
+```
+git clone https://github.com/SillyTavern/SillyTavern -b staging
+```
+
+进行克隆部署 release 版本或 staging 版本, 自行二选其一
+在完成克隆之后, 你应当能看见如下输出:
+
+![imh](vps/clone.jpg){ loading=lazy }
+
+使用 ls 命令查验
+确保 SillyTavern 文件夹存在
+
+![ha](vps/ls.jpg){ loading=lazy }
+
+使用
+```
+cd SillyTavern/
+```
+
+命令进入文件夹, 使用 ls 命令再次查验其内部是否存在各项文件
+
+#### 2.3.2 配置酒馆
+
+在成功安装之后之后, 在 SillyTavern 文件夹内, 使用 
+```
+bash start.sh
+```
+
+命令运行启动脚本, 其会在启动时检查js依赖, 并自动安装依赖内容.
+
+![gh](vps/sill.jpg){ loading=lazy }
+
+在 bash start.sh 后你应当看见如上输出
+
+出现 
+```
+=================================================
+
+Go to: http://127.0.0.1:8000/ to open SillyTavern
+
+=================================================
+```
+
+意味着你顺利安装了依赖并成功启动了酒馆, 那么此时, 应当先使用 ctrl + c 退出酒馆, 开始进行配置
+
+配置:
+
+在第一次使用 bash start.sh 运行酒馆时, 同时会生成一份 config.yaml 文件, 这是酒馆的配置文件
+
+可以使用
+```
+nano config.yaml
+```
+
+进行编辑, 编辑完成后使用 ctrl + o 保存并使用 ctrl + x 关闭nano
+
+![in](vps/yal.jpg){ loading=lazy }
+
+在config中, true 代表打开, false 代表关闭
+
+我们主要关注以下几项:
+
+```
+listen: false  <<== 默认为 false, 应修改为 true
+- listen
+```
+控制酒馆是否监听远程连接, 默认为 false 时, 酒馆只会监听来自运行它的计算机的连接(localhost), 由于我们在使用远程的云服务器, 所以这项必须设置为 true, 来让我们自己的电脑/手机向服务器发起的连接可以正确的被服务器上的酒馆监听响应
+
+```
+port: 8000  <<== 默认为8000,
+```
+ 可保持不变或自行使用其他端口
+这一项设置了在ip地址后面使用什么端口去连接酒馆
+如果你的服务器ip是 123.123.123.123, 并且 port 保持不变, 那么连接酒馆页面在地址栏填入的就是: `123.123.123.123:8000`
+
+如果你自定义了, 如设为了 8888, 那么, 地址栏填入的则是: `123.123.123.123:8888`
+同样的, 与ssh登录端口一样, 
+
+```
+whitelistMode: true  <<== 默认为true, 视情况设为 true 或 false
+```
+
+这里设置的是是否要启用白名单模式, 设为 true 意味着仅允许来自白名单列表内的ip连接酒馆, 
+这里应当由: 你知晓自己的公网ip并确保它是固定不变的 来确认你是否需要将它设为 true
+如果你不知道, 或者无法确保自己的公网ip不变, 那么你需要将其设为 false
+如果你知道自己的公网ip并可以确保其固定不变, 你可以按自己的喜好选择设为 true 或 false
+
+```
+whitelist:  <<== 白名单列表
+  - ::1
+  - 127.0.0.1
+```
+
+如果 whitelistMode 设为了 false, 这一项便是无意义的, 如果设为了 true 则仿照格式添加自己的公网ip
+
+```
+basicAuthMode: false  <<== 默认为 false, 应修改为 true
+```
+
+酒馆页面进入时的登录设置, 设为 true 时, 在进入酒馆页面的时候需要输入登录用户名与密码, 否则, 在默认的 false 时, 任何人都可以无条件随意的进入你的酒馆页面, 玩弄你的赛博老婆, 删除修改聊天记录/角色卡, 以及盗用你的 API, 他花API额度进行享受, 你要掏钱为他付款, 所以为了避免该类情况, 建议将其设为 true
+
+```
+basicAuthUser:  <<== 登录时的用户名和密码, 值使用引号包裹
+  username: ""
+  password: ""
+```
+!!! warning "注意"
+
+	如果 basicAuthMode 设为了 false, 这一项便是无意义的
+	再次建议启用 basicAuthMode, 并将用户名与密码设置一个高强度的用户名与密码, 不建议任何中/弱密码,
+	例如:
+	```
+	username: "admin"
+	password: "123456"
+	```
+	这种安全性弱到弱智的弱用户名/密码就别往里填了
+
+那么之后
+
+你可以使用 
+```
+bash start.sh 再次打开酒馆
+```
+
+此时这一条应当由之前的
+`SillyTavern is listening on IPv4: 127.0.0.1:8000`
+
+变为:
+`SillyTavern is listening on IPv4: 0.0.0.0:8000`
+
+并且你应该可以通过你的服务器ip + 端口顺利打开酒馆的网页页面, 并可以输入用户名和密码进行登录
+
+那么恭喜你, 你顺利的完成了酒馆的部署
+
+之后便可开始使用酒馆, 具体酒馆各项功能如何使用, 请参阅文档页面目录中的其他使用教程, 这里不再赘述
+
+
+
+
 
 
 
