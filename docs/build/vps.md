@@ -199,6 +199,79 @@ ssh -i C:\你的\目标\路径\私钥文件名" -p 112345 root@xxx.xxx.xxx.xxx
 
 当然, 这一串太过冗长了, 过于麻烦了,对此, 解决方案就是:
 
+![img](vps/config.jpg)
+
+在这个目录下创建一个名为 config 的文件(没有任何后缀)
+以这个格式创建一份配置, 
+```
+Host my_server
+  HostName xxx.xxx.xxx.xxx
+  IdentityFile 这一行建议直接从文件管理器的地址栏复制, 然后加上你的私钥文件名
+  Port 12345
+  User root
+```
+
+之后保存, 你就可以使用 ssh my_server 来登录服务器了, OpenSSH会自动从这里读取你的配置
+
+接下来, 终于到了你最期待的一步了
+
+## 2. 部署酒馆与clewd
+
+那么首先, 你需要先安装酒馆的部署环境
+
+在linux系统上, 这是极其简易的
+
+### 2.1 Git
+
+首先, 安装 git , 如果你的系统不自带的话, 使用
+```
+git -v
+```
+
+来进行确认, 如果命令未找到/未知命令, 没有返回版本信息, 则说明你需要安装 git
+对于Debian:
+只需要使用这一行命令即可:
+```
+apt install git
+```
+
+出现这样的内容即是成功, 可输入`git -v` 进行验证
+
+![img](vps/git.jpg){ loading=lazy }
+
+安装过程中可能会卡住询问[yes/no]或[y/n], 需要你确认是否要安装, 请输入 yes 或 y 并回车确认
+对于其他linux发行版
+自行使用其对应的包管理器安装 git
+
+### Node.js
+
+你只需要跟随 node.js 官网的内容走即可
+
+![imag](vps/node.jpg){ loading=lazy }
+
+输入这条命令输入并回车: 
+```
+curl -o- https://fnm.vercel.app/install | bash
+```
+
+![img](vps/pak.jpg){ loading=lazy }
+
+!!! success "注意:"
+
+	可能会提示缺少依赖软件,解决方案很简单:缺什么安什么,OK! 代表已有,Missing! 代表缺失,例如图中缺失 unzip,那么就使用命令:``` apt install unzip
+```来安装缺失的依赖软件
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
