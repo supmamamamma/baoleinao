@@ -41,7 +41,7 @@ ssh -v
 ```
 来查看你的ssh版本
 
-![img](sshcn.jpeg)
+![img](sshcn.jpeg){ loading=lazy }
 
 那么在此之后, 你就可以通过 ssh root@xxx.xxx.xxx.xxx 来登录你的服务器
 其中, @前面的部分为你的用户名, 一般新服务器默认为root
@@ -51,7 +51,7 @@ ssh -v
 
 那么进行到这一步了, 我们先等一下, 先不要急于连接, 已经建立的连接可以通过输入 exit 来退出
 
-![img](vps/exit.jpg)
+![img](vps/exit.jpg){ loading=lazy }
 
 !!! warning "注意"
 
@@ -67,7 +67,7 @@ ssh root@xxx.xxx.xxx.xxx
 
 来登录你的服务器, 过程中会要求输入你的登录密码, 如果你还记得, 那么恭喜你, 你应该可以顺利登录并看到这样的界面
 
-![img](vps/login.jpg)
+![img](vps/login.jpg){ loading=lazy }
 
 接着输入 `nano /etc/ssh/sshd_config` , 使用debian12自带的nano编辑器, 去修改sshd_config
 将Port这一条修改为足够高的不常见端口:
@@ -76,7 +76,21 @@ ssh root@xxx.xxx.xxx.xxx
 
 **(别填个示例的12345!)**
 
+![img](vps/pro.jpg){ loading=lazy }
 
+之后, 使用 ++ctrl+o++ 快捷键来保存修改, 然后使用 ++ctrl+x++ 来退出
+
+接着, 输入 
+
+```bash
+sudo systemctl restart sshd
+```
+
+重启ssh服务, 来应用修改
+
+然后, 在你的服务器供应商网站的控制台中, 找到安全组/防火墙一类的页面, 将你的新的ssh登录端口进行放行
+
+它看起来是这个样子:
 
 
 
