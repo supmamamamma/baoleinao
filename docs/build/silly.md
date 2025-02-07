@@ -197,6 +197,68 @@ winget install --id Git.Git -e --source winget
 安装页面太多，为了保证排版，就不一一截图了。
 总之，无论你是用哪种方法，**都要再次验证是否正常安装**，然后就可以进行下一步安装node了。
 
+### 2.2安装node
+安装node和安装git的方法高度一致（尤其对于winget来说），故这一部分的教程不会详细描述。
+
+#### 2.2.1确认是否安装node
+和看git的方法一样，在cmd输入代码：
+```
+node -v
+npm -v
+```
+然后回车。
+
+<figure markdown="span">
+  ![Image title](/img/build/node.jpg){ loading=lazy }
+  <figcaption>图2.6 检查node安装</figcaption>
+</figure>
+
+在这一步，有些人可能会遇见**无法加载文件xxx，因为在此系统上无法运行脚本**的报错，这是一个非常好解决的报错，详情请看附录一，或者自行查找解决方案。
+
+#### 2.2.2开始安装node
+
+##### 2.2.2.1使用winget安装node（推荐）
+
+在命令行输入
+```bash
+winget install OpenJS.NodeJS.LTS
+```
+然后回车。
+聪明的你可能注意到这和安装git的命令格式有些许不同，但这只是参数输入上的区别，所以不用在意。
+
+##### 2.2.2.2使用安装包安装node
+
+在[官网的下载页面](https://nodejs.org/zh-cn/download)进行下载。
+
+<figure markdown="span">
+  ![Image title](/img/build/nodedown.jpg){ loading=lazy }
+  <figcaption>图2.7 下载页面</figcaption>
+</figure>
+
+随后一路next安装即可。
+
+## 3.酒馆是怎样建成的——安装SillyTavern
+!!! warning "注意"
+
+    在进行下面的步骤之前，请确保你的电脑能够连接上外网，不过既然你都看到了这篇教程，想来这对你来说，应该并不是一件难事。
+
+### 3.1配置node镜像（可选，推荐）
+
+众所周知的原因，国内的电脑想要访问国外的网站总是很麻烦的。
+对于我们的工具箱node来说，我们一会要进行的配置就像是从工具箱拿工具，而从邻居家拿工具和从自己家拿工具显然差别很大。
+所以我们要配置node镜像，告诉电脑：你要从我家里已经复制好的工具箱里拿工具，而不是位于邻居家的官方的工具箱。
+
+#### 3.1.1查看当前的npm镜像
+在cmd中输入命令:
+```
+npm config get registry
+```
+来查看当前的源
+
+
+
+
+
 
 
 
