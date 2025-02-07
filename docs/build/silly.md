@@ -154,7 +154,7 @@ git -v
 1. 像这样提示“git不是内部或外部命令，也不是可运行的程序或批处理文件”
 
 <figure markdown="span">
-  ![Image title](/img/gitun.jpg){ loading=lazy }
+  ![Image title](/img/gitun.jpeg){ loading=lazy }
   <figcaption>图2.3，未安装git</figcaption>
 </figure>
 
