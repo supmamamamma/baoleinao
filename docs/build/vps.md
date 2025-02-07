@@ -258,8 +258,12 @@ curl -o- https://fnm.vercel.app/install | bash
 
 !!! success "注意:"
 
-	可能会提示缺少依赖软件,解决方案很简单:缺什么安什么,OK! 代表已有,Missing! 代表缺失,例如图中缺失 unzip,那么就使用命令:``` apt install unzip
-```来安装缺失的依赖软件
+	可能会提示缺少依赖软件,解决方案很简单缺什么安什么,OK! 代表已有,Missing! 代表缺失,例如图中缺失 unzip,那么就使用命令:
+	```
+	apt install unzip
+	```
+	来安装缺失的依赖软件
+
 
 
 
