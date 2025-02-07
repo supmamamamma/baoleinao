@@ -119,6 +119,32 @@ graph TD
 
 ### 2.1安装git
 
+#### 2.1.1确认是否安装git
+
+首先确认你是否已经安装了git：
+按windows徽标+r键，然后在框内输入 `cmd/powershell`然后点击“确定”来打开`cmd/powershell`
+
+<figure markdown="span">
+  ![Image title](/img/cmd.jpg){ loading=lazy }
+  <figcaption>图2.1，使用组合键打开cmd</figcaption>
+</figure>
+
+!!! note "注"
+
+    作者个人习惯使用cmd，接下来的示例全部使用cmd演示，powershell同理。
+
+在打开cmd后，你会看到如图所示的黑色窗口（powershell有可能是蓝色），接下来输入代码：
+```git -v```
+然后回车。请注意git与-v中间有空格，之后的命令不再强调类似的空格。
+接下来，你会看到两种可能：
+
+1. 像这样提示“git version xxxxxx”
+
+
+
+
+
+
 
 
 
