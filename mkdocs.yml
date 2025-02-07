@@ -3,6 +3,8 @@ site_url: https://down-3ud.pages.dev
 nav: 
   - "首页":
     - index.md
+  - "搭建部署":
+    - "首页": build/index.md
 theme: 
   name: material
   language: zh
