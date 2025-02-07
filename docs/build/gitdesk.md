@@ -38,6 +38,9 @@
 
 在上面的教程中，我们已经成功安装了酒馆。在酒馆根目录双击名为 ”UpdateAndStart.bat” 即可快速更新酒馆，**在此之前你必须已经安装了git才可以运行此脚本！**
 
+![image](gitdesk/update.jpeg)
+
+
 
 
 
