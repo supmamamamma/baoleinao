@@ -264,6 +264,48 @@ curl -o- https://fnm.vercel.app/install | bash
 	```
 	来安装缺失的依赖软件
 
+第一步
+`curl -o- https://fnm.vercel.app/install | bash`
+的成功输出将是: 
+
+![img](vps/oup.jpg){ loading=lazy }
+
+
+根据提示, 输入
+```
+source /root/.bashrc
+```
+
+来应用环境变量
+
+然后使用
+```
+fnm install 22
+```
+
+来安装node.js
+
+最后使用 `node -v` 和 `npm -v`
+查验是否正确安装, 理应返回各自的版本号
+
+![imh](vps/npmin.jpg){ loading=lazy }
+
+### 2.3 酒馆 SillyTavern 
+
+安装酒馆也是十分简单
+
+#### 2.3.1 部署酒馆
+
+跟随官方文档, 使用git命令克隆即可
+
+
+
+
+
+
+
+
+
 
 
 
