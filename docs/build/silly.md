@@ -144,6 +144,60 @@ git -v
 
 1. 像这样提示`git version xxxxxx`
 
+<figure markdown="span">
+  ![Image title](/img/gitins.jpg){ loading=lazy }
+  <figcaption>图2.2，成功安装git</figcaption>
+</figure>
+
+这代表着你的电脑已经按照了git，请接下来转到安装node步继续。
+
+1. 像这样提示“git不是内部或外部命令，也不是可运行的程序或批处理文件”
+
+<figure markdown="span">
+  ![Image title](/img/gitun.jpg){ loading=lazy }
+  <figcaption>图2.3，未安装git</figcaption>
+</figure>
+
+这代表你的电脑尚未安装git，请继续。
+
+#### 2.1.2开始安装git
+有两种方式安装git：使用winget安装和下载安装包安装。
+
+##### 2.1.2.1使用winget安装git（推荐）
+我已经懒到去找winget的官方说明了，所以不要管这是什么，让我们继续，好吗？
+对了，你关闭了cmd吗？没有？很好，让我们继续。如果关掉了也不要紧，重新打开便是。接下来输入：
+``` 
+winget install --id Git.Git -e --source winget
+```
+
+然后回车。如果不出意外，应该显示如下：
+
+<figure markdown="span">
+  ![Image title](/img/wget.jpg){ loading=lazy }
+  <figcaption>图2.4,使用winget安装git</figcaption>
+</figure>
+
+##### 2.1.2.2使用安装包安装git
+
+好吧好吧，我知道我理解，总有人在使用命令行的时候遇到各种各样的问题。
+要么自己的老旧电脑没有winget，要么不知道为什么使用了LTSC但是不愿意安装winget，要么就是单纯的对命令行控制电脑感到无所适从，要么就是家里年迈的老父亲忽然窜出来，说什么表叔的邻居的丈夫的外甥在上微机课的时候敲了两次命令行，电脑直接冒烟了，从此对命令行产生了深深的心理阴影。
+
+不管怎么说，这里也有不敲命令行的办法：
+首先在**官网的下载页面**，下载你需要的windows安装包，
+!!! warning "注意"
+
+    如果你的操作系统是32位的,作者个人建议请放弃安装酒馆。
+
+<figure markdown="span">
+  ![Image title](/img/gitweb.jpg){ loading=lazy }
+  <figcaption>图2.5 在官网下载git安装包</figcaption>
+</figure>
+
+然后一路默认安装即可，这里的界面就像你在安装qq等众多windows的应用程序的安装程序一样，是不是很亲切？
+安装页面太多，为了保证排版，就不一一截图了。
+总之，无论你是用哪种方法，**都要再次验证是否正常安装**，然后就可以进行下一步安装node了。
+
+
 
 
 
