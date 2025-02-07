@@ -8,7 +8,7 @@
 
 !!! note
 
-	急需文案支援——by方素琪
+	急需支援——by Logan梦女
 
 - [Windows本地部署酒馆与clewd教程](silly.md)
 - [通过 Github Desktop 在PC本地安装酒馆/clewd/YouChat_Proxy](gitdesk.md)
