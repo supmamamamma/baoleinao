@@ -21,9 +21,8 @@
 
 - 一般所有人第一次安装成功打开酒馆后会看到如下界面（左图电脑，右图手机）：
 
-![imh](tavern/main.jpg){ loading=lazy } { align=left }
-![img](tavern/phone.jpg){ loading=lazy } { alingn=right }
-
+![imh](tavern/main.jpg){ loading=lazy align=left }
+![img](tavern/phone.jpg){ loading=lazy align= right }
 以左图为例，上方白色条中的九个图标为主菜单，下方白色条中的左侧两个图标也属于菜单，但功能不同，后续会详细说明。
 
 - 通常，社区聊天中对这些菜单的图标会依次称其为（如右图所示）：预设/破限、插头、A 、世界书、用户设置、图片、三个小方块堆起来（扩展）、笑脸（用户）、角色（角色设置）
