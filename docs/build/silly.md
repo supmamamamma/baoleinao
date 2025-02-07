@@ -284,9 +284,9 @@ npm config set registry https://registry.npmmirror.com
 
 首先，选择或干脆新建一个文件夹作为安装SillyTavern的地方，然后点击路径，输入cmd来使cmd定位此处。
 
+ ![Image title](/img/build/opencmd.jpg{ loading=lazy }
 <figure markdown="span">
   ![Image title](/img/build/install.jpg{ loading=lazy }
-  ![Image title](/img/build/opencmd.jpg{ loading=lazy }
   <figcaption>图3.2-3.3</figcaption>
 </figure>
 
