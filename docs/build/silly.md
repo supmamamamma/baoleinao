@@ -322,10 +322,10 @@ git clone https://github.com/SillyTavern/SillyTavern -b staging
 
 #### 3.3.1手动安装npm依赖（稳定）
 
-还记得你之前安装的node吗？现在派上用场了！ 在酒馆目录（注意！在安装完成后，git应该是新建一个文件夹的。所以如果你是像我一样一开始的目录是D:\SillyTavern，那么现在的酒馆目录应该是D:\SillyTavern\SillyTavern），运行命令
-```bash npm install
+还记得你之前安装的node吗？现在派上用场了！ 在酒馆目录（注意！在安装完成后，git应该是新建一个文件夹的。所以如果你是像我一样一开始的目录是D:\SillyTavern，那么现在的酒馆目录应该是D:\SillyTavern\SillyTavern），运行命令是：
 ```
-
+npm install
+```
 #### 3.3.2自动安装npm依赖（推荐）
 
 如果你自己配置了镜像npm源，那么推荐用这个方法。 非常简单，一句话——双击start.bat。
