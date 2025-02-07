@@ -13,11 +13,15 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.progress
-    - navigation.expand
-    - search.suggest
-    - content.code.copy
     - navigation.top
     - navigation.indexes
+    - search.suggest
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
   palette: 
 
     - media: "(prefers-color-scheme)"
