@@ -144,6 +144,61 @@ ssh-keygen -t ed25519 -f "C:\你的\目标\路径\文件名"
 
 于是, 你便可以进入这个目录去寻找你刚才生成的密钥对了
 
+![img](vps/path.jpg){ loading=lazy }
+
+图中的 id_ed25519 与 id_25519.pub 就是你的私钥与公钥,
+
+!!! danger "极其重要"
+
+	这一对宝贝都要妥善保管好, 千万不得遗失,不然别管耶稣上帝还是三清和如来,你把他们找来他们也进不去你的服务器, 更别说你自己,你就是把欧姆弥赛亚找来都没用!!!
+
+其中 id_ed25519 是私钥
+首先你要做的就是, 使用文本软件打开 id_25519.pub , 这是你的公钥, 你需要将它放在服务器上
+
+使用文本软件打开它, ++ctrl+a++ 全选, 然后 ++ctrl+c++ 复制里面的内容
+
+![img](vps/copy.jpg){ loading=lazy }
+
+连接登录你的服务器, 然后输入
+```
+nano .ssh/authorized_keys
+```
+
+来编辑配置你的密钥文件(如果不存在nano会自动创建).
+
+![img](vps/nano.jpg){ loading=lazy }
+
+将你的密钥粘贴进去(ctrl + v), 然后使用 ctrl + o 保存修改, ctrl + x 关闭
+
+接着, 去使用 nano /etc/ssh/sshd_config
+
+找到 `PubkeyAuthentication` 与 `PasswordAuthentication` 这两项
+如果它们以#开头, 意味着它们被注释掉了, 首先, 删掉#, 取消他们的注释
+将 `PasswordAuthentication` 设置为 no
+将 `PubkeyAuthentication` 设置为 yes
+
+(如果没有这两条, 请确保反复确认过没有这两条之后, 再将这两条追加到文件的末尾粘贴进去)
+```
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+最后, 使用 ++ctrl+o++ 保存修改, ++ctrl+x++ 关闭, 输入
+```
+sudo systemctl restart sshd
+```
+
+重启ssh服务
+那么, 服务器的配置就结束了
+在登录的时候, 使用
+```
+ssh -i C:\你的\目标\路径\私钥文件名" -p 112345 root@xxx.xxx.xxx.xxx
+```
+
+去登录了
+
+当然, 这一串太过冗长了, 过于麻烦了,对此, 解决方案就是:
+
 
 
 
