@@ -255,6 +255,50 @@ npm config get registry
 ```
 来查看当前的源
 
+可以看到，
+上面是`https://registry.npmjs.org`，这是并不位于国内的官方源，如果你刚刚安装了node，那么你应该显示的是这个；
+下面是`https://registry.npmmirror.com`，这是位于国内的淘宝源。
+
+#### 3.1.2修改镜像
+
+作者使用的是国内镜像是淘宝源，天知道为什么阿里巴巴不叫他阿里源而是叫淘宝源，听起来就像是你在网上购物时发现的，那种用广告告诉你这是来自淘宝源头加工厂的货物，反正和计算机是八竿子打不着的。
+……
+……
+其实，阿里源听起来也挺土的，对吧？
+
+修改镜像的命令是：
+
+```bash
+npm config set registry https://registry.npmmirror.com
+```
+
+- 如果你有自己中意的镜像源，只需要在命令里修改后面https开头的源地址即可。
+- 在按回车之后等几秒，会弹出等待输入下一个命令的光标，
+- 此时就代表着切换完成,我们可以再次运行查看命令来检查是否成功切换。
+
+### 3.2安装SillyTavern
+
+好消息！你终于来到了心心念念（也许）的安装SillyTavern环节！
+更好的消息！最难的地方已经过去了！
+~~所以，是不是还蛮简单的？~~
+
+首先，选择或干脆新建一个文件夹作为安装SillyTavern的地方，然后点击路径，输入cmd来使cmd定位此处。
+
+<figure markdown="span">
+  ![Image title](/img/build/install.jpg{ loading=lazy }
+  ![Image title](/img/build/opencmd.jpg{ loading=lazy }
+  <figcaption>图3.2-3.3</figcaption>
+</figure>
+
+然后输入代码来从GitHub上下载SillyTavern
+```bash
+git clone https://github.com/SillyTavern/SillyTavern -b release
+```
+或
+```bash
+git clone https://github.com/SillyTavern/SillyTavern -b staging
+```
+前者的release是稳定版，staging是测试版，如果不是有特殊需要下载稳定版即可。 当然了，你可能会遇见下面的状况：
 
 
 
