@@ -12,7 +12,7 @@
 
 # 目录
 
-## [搭建部署](build/index.md)
+## [💻搭建部署](build/index.md)
 
 - [Windows本地部署酒馆与clewd教程](build/silly.md)**施工中**
 - 通过 Github Desktop 在PC本地安装酒馆/clewd/YouChat_Proxy
