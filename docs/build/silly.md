@@ -78,7 +78,7 @@ graph TD
 显然你不可能去官网，直接给ai打字说：“**哦老天我的下面要着起来了,快给我写一个让我舒服舒服的文章。”**
 
 <figure markdown="span">
-  ![Image title](/img/shu.jpg){ loading=lazy }
+  ![Image title](/img/build/shu.jpg){ loading=lazy }
   <figcaption>图1.1，错误的对话方法</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ graph TD
 按windows徽标+r键，然后在框内输入 `cmd/powershell`然后点击“确定”来打开`cmd/powershell`
 
 <figure markdown="span">
-  ![Image title](/img/cmd.jpg){ loading=lazy }
+  ![Image title](/img/build/cmd.jpg){ loading=lazy }
   <figcaption>图2.1，使用组合键打开cmd</figcaption>
 </figure>
 
@@ -145,7 +145,7 @@ git -v
 1. 像这样提示`git version xxxxxx`
 
 <figure markdown="span">
-  ![Image title](/img/gitins.jpg){ loading=lazy }
+  ![Image title](/img/build/gitins.jpg){ loading=lazy }
   <figcaption>图2.2，成功安装git</figcaption>
 </figure>
 
@@ -154,7 +154,7 @@ git -v
 1. 像这样提示“git不是内部或外部命令，也不是可运行的程序或批处理文件”
 
 <figure markdown="span">
-  ![Image title](/img/gitun.jpeg){ loading=lazy }
+  ![Image title](/img/build/gitun.jpeg){ loading=lazy }
   <figcaption>图2.3，未安装git</figcaption>
 </figure>
 
@@ -173,7 +173,7 @@ winget install --id Git.Git -e --source winget
 然后回车。如果不出意外，应该显示如下：
 
 <figure markdown="span">
-  ![Image title](/img/wget.jpg){ loading=lazy }
+  ![Image title](/img/build/wget.jpg){ loading=lazy }
   <figcaption>图2.4,使用winget安装git</figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ winget install --id Git.Git -e --source winget
     如果你的操作系统是32位的,作者个人建议请放弃安装酒馆。
 
 <figure markdown="span">
-  ![Image title](/img/gitweb.jpg){ loading=lazy }
+  ![Image title](/img/build/gitweb.jpg){ loading=lazy }
   <figcaption>图2.5 在官网下载git安装包</figcaption>
 </figure>
 
