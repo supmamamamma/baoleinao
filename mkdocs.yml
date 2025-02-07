@@ -5,6 +5,7 @@ nav:
     - index.md
   - "搭建部署":
     - "首页": build/index.md
+    - "Windows本地部署酒馆与clewd教程": build/silly.md
 theme: 
   name: material
   language: zh
