@@ -66,20 +66,21 @@
 
 ## 酒馆各常见图标及功能简介汇总
 
-**可以自行意会的萌新可跳过此处，是电脑也不用看，部分UI鼠标悬停会出现文字说明**
 
-- 这是聊天界面的图标：
+??? info "**可以自行意会的萌新可跳过此处，是电脑也不用看，部分UI鼠标悬停会出现文字说明**"
 
-![img](tavern/chat.jpg){ loading=lazy }
+	- 这是聊天界面的图标：
 
-- 这是各个菜单界面的有关图标：
+	![img](tavern/chat.jpg){ loading=lazy }
 
-![imh](tavern/menu.jpg){ loading=lazy }
-![im](tavern/connect.jpg){ loading=lazy }
-![im](tavern/form.jpg){ loading=lazy }
-![im](tavern/work.jpg){ loading=lazy }
-![im](tavern/per.jpg){ loading=lazy }
-![im](tavern/char.jpg){ loading=lazy }
+	- 这是各个菜单界面的有关图标：
+
+	![imh](tavern/menu.jpg){ loading=lazy }
+	![im](tavern/connect.jpg){ loading=lazy }
+	![im](tavern/form.jpg){ loading=lazy }
+	![im](tavern/work.jpg){ loading=lazy }
+	![im](tavern/per.jpg){ loading=lazy }
+	![im](tavern/char.jpg){ loading=lazy }
 
 ## 部分名词解释
 
