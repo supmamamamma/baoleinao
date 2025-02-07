@@ -79,7 +79,7 @@ SillyTavern 是 TavernAI 1.2.8 的一个分支，正在进行更积极地开发�
 显然你不可能去官网，直接给ai打字说：“**哦老天我的下面要着起来了,快给我写一个让我舒服舒服的文章。”**
 
 <figure markdown="span">
-  ![Image title](img/shu.jpg){ loading=lazy }
+  ![Image title](/img/shu.jpg){ loading=lazy }
   <figcaption>图1.1，错误的对话方法</figcaption>
 </figure>
 
