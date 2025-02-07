@@ -41,18 +41,18 @@
 
 # 常用资源和链接
 
-- 官网 Claude3 食用方法：https://rentry.org/teralomaniac_clewd 
+- 官网 Claude3 食用方法：[https://rentry.org/teralomaniac_clewd](https://rentry.org/teralomaniac_clewd)
 
 ## Clewd 修改版：
 
-- Github 项目地址：https://github.com/teralomaniac/clewd 
-- 版本功能说明：https://rentry.org/teralomaniac_clewd_ReleaseNotes
+- Github 项目地址：[https://github.com/teralomaniac/clewd](https://github.com/teralomaniac/clewd)
+- 版本功能说明：[https://rentry.org/teralomaniac_clewd_ReleaseNotes](https://rentry.org/teralomaniac_clewd_ReleaseNotes)
 
 ## SillyTavern/酒馆项目地址：
 
 - Github 项目地址：GitHub * SillyTavern/SillyTavern: LLM Frontend for Power Users. 
 - 酒馆官方英文文档：https://docs.sillytavern.app
-- 酒馆官方中文文档（汉化更新相比英文版稍慢）：SillyTavern 中文文档 
+- 酒馆官方中文文档（汉化更新相比英文版稍慢）：[SillyTavern 中文文档](https://st-docs.role.fun/)
 
 ## 角色卡获取与编辑（请不要未经作者允许搬运作品！）：
 
