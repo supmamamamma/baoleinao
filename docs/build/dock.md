@@ -19,36 +19,38 @@
 * 支持同时运行多个酒馆（想开几个开几个~）
 * 更新也是双击一下就搞定，还会自动帮你备份
 ## 准备工作 🛠️
-0. 安装 WSL2（Windows必需） 🐧
-1. 访问 微软官方指南
+### 0. 安装 WSL2（Windows必需） 🐧
+### 1. 访问 [微软官方指南](https://learn.microsoft.com/zh-cn/windows/wsl/install)
 
+### 2. 使用自动安装方法（简单推荐）：
 
-2. 使用自动安装方法（简单推荐）：
-
-
-   * 右键开始菜单 -> 以管理员身份运行 PowerShell
-   * 输入命令并回车：
-
-
+* 右键开始菜单 -> 以管理员身份运行 PowerShell
+* 输入命令并回车：
+```
 wsl --install
+```
 
+* 等待安装完成后重启电脑
+* 重启后等 Ubuntu 自动安装完成即可
 
-   * 等待安装完成后重启电脑
-   * 重启后等 Ubuntu 自动安装完成即可
-
-
-如果自动安装失败，请使用手动安装：(如果第2步成功无视这一步)
- * 以管理员身份运行 PowerShell 
+### 如果自动安装失败，请使用手动安装：(如果第2步成功无视这一步)
+* 以管理员身份运行 PowerShell 
 * 输入下面两条命令：
+```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
- 
+```
+
+```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart 
- * 重启电脑 
-* 下载 WSL2 Linux 内核更新包 
+```
+
+* 重启电脑 
+* 下载 [WSL2 Linux 内核更新包](https://learn.microsoft.com/zh-cn/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package) 
 * 安装下载的更新包 
 * 再次打开管理员 PowerShell，输入： 
+```
 wsl --set-default-version 2 
-
+```
 
 !!! warning "安装提示" 
 
@@ -59,53 +61,34 @@ wsl --set-default-version 2
 
 安装 WSL2 成功后，我们就可以开始安装 Docker Desktop 啦！
 
-
-
-
-1. 安装 Docker Desktop
-1. 访问 Docker Desktop 官网
+## 1. 安装 Docker Desktop
+1. 访问 [Docker Desktop 官网](https://www.docker.com/products/docker-desktop/)
 
 
 2. 点击大大的蓝色下载按钮
 
-
-  
-
-
-
 3. 等下载完成后双击安装包，一路点"下一步"就行啦
-
 
 4. 安装完成后重启电脑
 
-
 5. 重启后会看到 Docker Desktop 自动启动
 
-
-  
-
-2. 安装 Git
-1. 访问 Git 下载页面
-
-
+### 2. 安装 Git
+1. 访问 [Git 下载页面](https://git-scm.com/downloads/win)
 2. 点击下载按钮（Windows 版本）
-
-
-  
-
-
-
 3. 下载完成后双击安装，一路点"下一步"
 3. 下载安装脚本
-从这里下载我们的一键安装脚本： 下载点我！
+从这里下载我们的一键安装脚本： [下载点我！](https://github.com/pt4300/Sillytavern-docker-tutorial/releases/download/1.0/ez_tavern_docker.zip)
 
 
-!!! info "重要提示" * install_sillytavern.bat 放在你想安装酒馆的文件夹里 * update_sillytavern.bat 要放在同一个文件夹并且以后不要移动它，因为它需要知道酒馆安装在哪里才能更新
+!!! info "重要提示"
 
+	* install_sillytavern.bat 放在你想安装酒馆的文件夹里 
+	* update_sillytavern.bat 要放在同一个文件夹并且以后不要移动它，因为它需要知道酒馆安装在哪里才能更新
 
 比如你可以这样组织文件：
 
-
+```
 E:\MySillyTavern\
 
 
@@ -116,54 +99,30 @@ E:\MySillyTavern\
 
 
     └── SillyTavern\          【这个文件夹是安装后自动创建的】
-开始安装 🚀
+```
+
+## 开始安装 🚀
 1. 新建一个文件夹（放哪里都行）
-
-
 2. 把下载好的两个脚本放进去
-
-
 3. 双击 install_sillytavern.bat
-
-
 4. 根据提示输入：
 
-
-   * 想用的端口号（建议 3000-9000 之间，不知道的话直接回车用默认的 8000）
-   * 酒馆名字（起个好记的，比如 tavern1，不知道的话直接回车用默认的）
-
-
-  
-
-
+* 想用的端口号（建议 3000-9000 之间，不知道的话直接回车用默认的 8000）
+* 酒馆名字（起个好记的，比如 tavern1，不知道的话直接回车用默认的）
 
 5. 等待安装完成，看到成功提示就可以了！
 
-
-  
-
-
-
 6. 这时候你应该可以在docker看到一个名字为你输入名字的容器，这就是你的酒馆啦！
   
-
-
-
-
-
 7. 现在需要添加允许访问的IP：
 
+* 先用浏览器访问 http://localhost:8000/
+* 你会看到一个报错页面，里面会显示需要添加的IP地址 
+* 回到安装文件夹，进入 docker/config 目录
+* 找到 config.yaml 文件并打开 
+* 在 whitelist 下面添加以下IP：
 
-   * 先用浏览器访问 http://localhost:8000/
-   * 你会看到一个报错页面，里面会显示需要添加的IP地址 
-  
-
-   * 回到安装文件夹，进入 docker/config 目录
-  
-
-   * 找到 config.yaml 文件并打开 
-   * 在 whitelist 下面添加以下IP：
-
+```
 
 whitelist:
 
@@ -175,17 +134,19 @@ whitelist:
 
 
   - 172.18.0.1  # Docker内网IP
+```
 
+!!! info "这些IP是什么？" 
 
-!!! info "这些IP是什么？" * 这些是本地访问需要用到的IP地址： * ::1 和 127.0.0.1 是本机地址 * 172.18.0.1 是Docker内网地址 * 如果报错页面显示了其他IP，也要一起加进去哦~
+	* 这些是本地访问需要用到的IP地址： 
+	* ::1 和 127.0.0.1 是本机地址 
+	* 172.18.0.1 是Docker内网地址 
+	* 如果报错页面显示了其他IP，也要一起加进去哦~
 
 
 8. 大功告成！🎉 现在再次访问 http://localhost:xxx/ 就能看到你的专属酒馆啦！xxxx为你设定的端口号
 
-
-  
-
-多开说明 🎮
+## 多开说明 🎮
 想开多个酒馆？简单！
 
 
