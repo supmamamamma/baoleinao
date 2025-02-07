@@ -134,11 +134,15 @@ graph TD
     作者个人习惯使用cmd，接下来的示例全部使用cmd演示，powershell同理。
 
 在打开cmd后，你会看到如图所示的黑色窗口（powershell有可能是蓝色），接下来输入代码：
-```git -v```
+
+```bash
+git -v
+```
+
 然后回车。请注意git与-v中间有空格，之后的命令不再强调类似的空格。
 接下来，你会看到两种可能：
 
-1. 像这样提示“git version xxxxxx”
+1. 像这样提示`git version xxxxxx`
 
 
 
