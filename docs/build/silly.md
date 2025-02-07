@@ -23,34 +23,14 @@
 总体安装流程图的作用是让你在具体看教程之前知道自己将要做什么，因此更加推荐要完整的查看教程的内容。（鸣谢络络画的代码块和总结内容）
 
 ``` mermaid
-graph TD
-    A[开始] --> B[1. 安装Git]
-    B --> B1{检查是否已安装}
-    B1 -->|已安装| C[2. 安装Node.js]
-    B1 -->|未安装| B2[通过winget或安装包安装]
-    B2 --> C
-    
-    C --> C1{检查是否已安装}
-    C1 -->|已安装| D[3. 配置npm镜像]
-    C1 -->|未安装| C2[通过winget或安装包安装]
-    C2 --> D
-    
-    D --> D1[运行: npm config set registry]
-    D1 --> E[4. 拉取SillyTavern代码]
-    
-    E --> E1[git clone -b release]
-    E1 --> F[5. 安装依赖]
-    
-    F --> F1{选择安装方式}
-    F1 -->|手动| F2[npm install]
-    F1 -->|自动| F3[运行start.bat]
-    
-    F2 --> G[6. 启动酒馆]
-    F3 --> G
-    
-    G --> G1[运行start.bat]
-    G1 --> G2[访问localhost:8000]
-    G2 --> H[完成]
+flowchart TD
+    开始 --> Git安装
+    Git安装 --> |检查git -v| NodeJS安装
+    NodeJS安装 --> |检查node -v| NPM配置
+    NPM配置 --> |设置镜像| 拉取代码
+    拉取代码 --> |git clone| 安装依赖
+    安装依赖 --> |start.bat| 启动项目
+    启动项目 --> |访问8000端口| 完成
 ```
  
 
