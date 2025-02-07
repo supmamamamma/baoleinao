@@ -35,7 +35,11 @@
 
 Windows10/11几乎都自带有OpenSSH这一工具, 可以直接用于诸多与服务器相关的操作
 1. 首先, 打开你的 Windows 终端 或者 Windows PowerShell
-2. 接着你可以输入 ssh -v 来查看你的ssh版本
+2. 接着你可以输入 
+```
+ssh -v
+```
+来查看你的ssh版本
 
 ![img](sshcn.jpeg)
 
