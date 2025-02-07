@@ -1,5 +1,8 @@
 site_name: 类脑宝宝教程
 site_url: https://down-3ud.pages.dev
+nav: 
+  - "首页":
+    - index.md
 theme: 
   name: material
   language: zh
@@ -12,7 +15,7 @@ theme:
     - search.suggest
     - content.code.copy
     - navigation.top
-    - toc.integrate
+    - navigation.indexes
   palette: 
 
     - media: "(prefers-color-scheme)"
