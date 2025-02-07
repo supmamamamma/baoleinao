@@ -38,7 +38,13 @@
 
 在上面的教程中，我们已经成功安装了酒馆。在酒馆根目录双击名为 ”UpdateAndStart.bat” 即可快速更新酒馆，**在此之前你必须已经安装了git才可以运行此脚本！**
 
-![image](gitdesk/update.jpeg)
+![image](gitdesk/update.jpeg){ loading=lazy }
+
+### 通过GD来更新酒馆。
+在GD界面中, 我们可以发现红圈内显示着数字3，代表着这个分支已经更新过3次。我们点击蓝圈内的按钮就可以让本地酒馆文件更新到最新版本了。
+
+![image](gitdesk/desk.jpeg){ loading=lazy }
+
 
 
 

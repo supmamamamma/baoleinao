@@ -7,6 +7,7 @@ nav:
     - "首页": build/index.md
     - "Windows本地部署酒馆与clewd教程": build/silly.md
     - "通过 Github Desktop 在PC本地安装酒馆/Clewd/YouChat_Proxy": build/gitdesk.md
+    - "VPS 云端部署酒馆与Clewd": build/vps.md
 theme: 
   name: material
   language: zh

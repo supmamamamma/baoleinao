@@ -15,8 +15,8 @@
 ## [💻搭建部署](build/index.md)
 
 - [Windows本地部署酒馆与clewd教程](build/silly.md)
-- [通过 Github Desktop 在PC本地安装酒馆/clewd/YouChat_Proxy](build/gitdesk.md)**施工中**
-- VPS 云端部署酒馆与Clewd
+- [通过 Github Desktop 在PC本地安装酒馆/clewd/YouChat_Proxy](build/gitdesk.md)
+- [VPS 云端部署酒馆与Clewd](build/vps.md)**施工中**
 - 傻瓜式图文教程:SillyTavern Docker 一键部署教程,开箱即用的容器版酒馆！🎮
 
 ## 🍺 酒馆使用
