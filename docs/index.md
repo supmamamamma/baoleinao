@@ -15,24 +15,24 @@
 ## [💻搭建部署](build/index.md)
 
 - [Windows本地部署酒馆与clewd教程](build/silly.md)
-- [通过 Github Desktop 在PC本地安装酒馆/clewd/YouChat_Proxy](build/gitdesk.md)**施工中**
-- VPS 云端部署酒馆与Clewd
-- 傻瓜式图文教程:SillyTavern Docker 一键部署教程,开箱即用的容器版酒馆！🎮
+- [通过 Github Desktop 在PC本地安装酒馆/clewd/YouChat_Proxy](build/gitdesk.md)
+- [VPS 云端部署酒馆与Clewd](build/vps.md)
+- [傻瓜式图文教程:SillyTavern Docker 一键部署教程,开箱即用的容器版酒馆！🎮](build/dock.md)
 
 ## 🍺 酒馆使用
 
-- 酒馆介绍——萌新向
-- VPS酒馆更新
-- 正确导入/导出更新后角色卡的方法
-- 酒馆常见问题
-- 前端卡问题自查教程
+- [酒馆介绍——萌新向](silly/tavern.md)
+- [VPS酒馆更新](silly/up.md)
+- [正确导入/导出更新后角色卡的方法](silly/char.md)
+- [酒馆常见问题](silly/que.md)(施工中)
+- [前端卡问题自查教程](silly/css.md)
 - 解放双手: 用移动设备连接搭建在PC端的酒馆
 
 ## 🤖 获取AI渠道
 
-- Pro退款流
+- [Pro退款流](get_ai/pro_refund.md)
 - Gemini模型介绍和使用
-- Clewd连接报错
+- [Clewd连接报错大全](get_ai/clewd.md)
 
 ## 🧠 类脑Discord相关
 
