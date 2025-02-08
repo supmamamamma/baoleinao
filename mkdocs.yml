@@ -15,6 +15,7 @@ nav:
     - "VPS酒馆更新": silly/up.md
     - "正确导入/导出更新后角色卡的方法": silly/char.md
     - "前端卡问题自查教程": silly/css.md
+    - "酒馆常见问题": sillt/que.md
   - "获取ai渠道": 
     - "首页": get_ai/index.md
     - "Clewd报错大全": get_ai/clewd.md
