@@ -1,10 +1,7 @@
 # 施工中…
 
-<<<<<<< HEAD
-=======
 ## 宝宝教程：https://down-3ud.pages.dev/
 
->>>>>>> c12e02af9afbc50c01833dc11636c14fcd47dcf4
 1. **Fork仓库**: 首先fork项目仓库到你的GitHub账户。
 2. **本地克隆**: 使用git客户端将fork的仓库克隆到本地机器。
     ```sh
