@@ -1,13 +1,17 @@
 ﻿# Gemini（哈基米）模型介绍、获取和使用教程
 
-作者：络络（lolodesu_）
-⚠️包含多项时效性内容，请注意甄别
+!!!note "作者：络络（lolodesu_）"
 
-编写于2025年1月
+      包含多项时效性内容，请注意甄别
+
+      编写于2025年1月
 
 
 Gemini（因为有时候有点笨且发音酷似流行网络梗，所以也被叫作哈基米x）是 Google 推出的大模型, 有多个版本。
-> <small>⚠️时效性内容，请注意日期，关注谷歌最新计划</small>
+
+!!! warning
+
+      时效性内容，请注意日期，关注谷歌最新计划
 
 对于酒馆RP来说目前主流 ~~（可以白嫖）~~ 的有：
 
@@ -60,12 +64,12 @@ Gemini是免费的，并且申请起来非常简单，**需要拥有闲置的谷
 3. 或者购买谷歌号：也可以另行自己购买谷歌号，价格在1.5元左右，这里不放任何渠道请自行寻找。
 4. 登录申请 Gmeini API 网站 <https://aistudio.google.com/apikey>  ，查看右上角是否是你的谷歌小号，如果不是请切换。（第一此进入可能会有一个用户协议勾选同意界面，同意就行啦。记得注意代理地址，若地址为香港会导致无法访问此页面）
 
-<img src="Picture-1.png" width="600"/>
+![img](gemini/Picture-1.png){ loading=lazy }
 
 5. 点击蓝色的**密钥创建API密钥（Creat API KEY)**按钮。
 6. 在搜索栏中创建新项目或者选择默认项目、点击蓝色的密钥（创建密钥按钮）
 
-<img src="Picture-2.png" width="600"/>
+![img](gemini/Picture-2.png){ loading=lazy }
 
 7. 点击复制，这就是你的api，非常简单吧？（api会保留在这个网站下方，请记住或者收藏来方便下次查找）
 8. 如果一个api不够你使用，建议创建**多个谷歌账号**申请api来进行轮询使用
@@ -74,11 +78,13 @@ Gemini是免费的，并且申请起来非常简单，**需要拥有闲置的谷
 
 在酒馆中选择Google AI Studio，并填入API Key（和openai不同的是，测试按钮无法测试属于正常，可以通过测试消息按钮进行测试）（来自@NeilYuan:不能使用记得打开翻墙软件的TUN模式，或者更改sillytavern根目录下的config文件中的proxy。）
 
-<img src="Picture-3.png" width="600"/>
+![img](gemini/Picture-3.png){ loading=lazy }
 
 **附录1：**
 
-> <small>⚠️时效性内容，请注意日期，关注谷歌最新计划</small>
+!!! warning
+
+      ⚠️时效性内容，请注意日期，关注谷歌最新计划
 
 |**来自@Neil Yuan提供的数据（来自[Google ai studio](https://ai.google.dev/gemini-api/docs/models/gemini?hl=zh-cn) ）**||
 | :- | :- |
@@ -95,9 +101,9 @@ Gemini是免费的，并且申请起来非常简单，**需要拥有闲置的谷
 
 （注意，在变为free之前立刻使用可能会报错）
 
-<img src="Picture-4.png" width="300"/>
+![img](gemini/Picture-4.png){ loading=lazy }
 
-<img src="Picture-5.png" width="300"/>
+![img](gemini/Picture-5.png){ loading=lazy }
 
 ## 应该用什么预设？
 千万**不要使用Claude的预设**，而是单独在预设、破限区中寻找Gemini的专属预设（可以勾选tag或者使用搜索bot，非常推荐使用搜索bot）
@@ -139,9 +145,10 @@ Gemini是免费的，并且申请起来非常简单，**需要拥有闲置的谷
 **【此内容来源于ZerxZ，未经授权，如有侵权请联系我或samb进行删除，discord：@lolodesu\_】**
 
 ## 关于Gemini-2.0-flash-thinking
-> <small>⚠️时效性内容，请注意日期，关注谷歌最新计划</small>
 
-此内容编写于2025年1月时，具有一定时效性，如果你查看的日期相对较晚，请仔细调查你所在的时间是否具有有效性。
+!!! warning "时效性内容，请注意日期，关注谷歌最新计划"
+
+      此内容编写于2025年1月时，具有一定时效性，如果你查看的日期相对较晚，请仔细调查你所在的时间是否具有有效性。
 
 此模型目前具有**经常输出俄语、西班牙语等其他文字的问题，是谷歌官方的bug**，不是你的问题也不是预设和酒馆的问题。
 
@@ -150,7 +157,8 @@ Gemini是免费的，并且申请起来非常简单，**需要拥有闲置的谷
 以及预览阶段的上下文上限是 32K （32000），记得改小你酒馆聊天预设设置的上下文大小以避免 413/400 等错误。
 
 ## 如何添加酒馆还没更新的模型？
-> <small>⚠️接下来的步骤较难，更推荐你使用编写好的脚本</small>
+
+接下来的步骤较难，更推荐你使用编写好的脚本
 https://github.com/LenAnderson/SillyTavern-CustomModels
 
 ### 步骤一：找到index.html文件
@@ -170,14 +178,14 @@ gemini-exp-1206
 
 关于模型更新新闻欢迎浏览类脑频道
 
-<img src="Picture-6.png" width="600"/>
+![img](gemini/Picture-6.png){ loading=lazy }
 
 ## 手机端如何添加呢？
 
 ### 方法一：使用MT文件管理器
 简单的方法就是下载MT文件管理器并连接Termux，非常简单我不会写详细的教程，放一下正常人类都能懂的教程啦
 
-<img src="Picture-7.png" width="600"/>
+![img](gemini/Picture-7.png){ loading=lazy }
 
 软件在哪里下载？懂得下载Discord的你应该知道怎么下载软件，我推荐在浏览器搜索coolapk下载酷安来找到MT文件管理器。
 
@@ -222,7 +230,7 @@ root@lolo:~/SillyTavern/public#nano index.html
 
 哇...进入了一个很高级很黑客的界面呢，也许下次朋友聚会时候你可以打开这个文件假装自己是黑客用来装x（）
 
-<img src="Picture-8.png" width="600"/>
+![img](gemini/Picture-8.png){ loading=lazy }
 
 6. 让我们使用CTRL+F来进行查找吧~！CTRL就在你输入法的上方呢
 
@@ -241,18 +249,18 @@ gemini-exp-1206
 
 就像这样~！
 
-<img src="Picture-9.png" width="600"/>
+![img](gemini/Picture-9.png){ loading=lazy }
 
 8. 就是现在！粘贴！（粘贴后看起来可能像是在前边没对齐，不要慌张这是正常的！只是显示效果）
 ```html
 <option value="gemini-2.0-flash-thinking-exp-01-21">Gemini 2.0 Flash thinking exp 0121</option>
 ```
 
-<img src="Picture-10.png" width="600"/>
+![img](gemini/Picture-10.png){ loading=lazy }
 
 9. 让我按一下HOME来到行首检查一下！
 
-<img src="Picture-11.png" width="600"/>
+![img](gemini/Picture-11.png){ loading=lazy }
 
 10. 太棒了你已经完全编辑好了呢，现在别忘记**保存文件**：
     - 使用CTRL+X来退出并保存
