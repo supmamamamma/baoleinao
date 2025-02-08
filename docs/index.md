@@ -38,7 +38,7 @@
 
 - [一种通用制卡思路](leinao_about/make_card.md)
 
-- 特殊文字用法（附更换封面图）
+- [特殊文字用法（附更换封面图）](leinao_about/discord.md)
 
 # 常用资源和链接
 
