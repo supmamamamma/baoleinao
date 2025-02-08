@@ -13,6 +13,7 @@ nav:
     - "首页": silly/index.md
     - "酒馆介绍——萌新向": silly/tavern.md
     - "VPS酒馆更新": silly/up.md
+    - "正确导入/导出更新后角色卡的方法": silly/char.md
 theme: 
   name: material
   language: zh
