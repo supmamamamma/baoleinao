@@ -6,7 +6,7 @@
 
 ## 1. 429
 
-<img src="cloewd_error/1.jpg" alt="image" alt="image"  />
+![img](clewd/1.jpg){ loading=lazy }
 
 原因:Cookie达到额度上限  
 解决:更换/添加cookie或等待冷却 
