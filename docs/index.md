@@ -26,12 +26,12 @@
 - [正确导入/导出更新后角色卡的方法](silly/char.md)
 - [酒馆常见问题](silly/que.md)
 - [前端卡问题自查教程](silly/css.md)
-- [解放双手: 用移动设备连接搭建在PC端的酒馆](silly/pc.md)(施工中)
+- [解放双手: 用移动设备连接搭建在PC端的酒馆](silly/pc.md)
 
 ## 🤖 获取AI渠道
 
 - [Pro退款流](get_ai/pro_refund.md)
-- Gemini模型介绍和使用
+- [Gemini模型介绍和使用](get_ai/Gemini.md)(施工中)
 - [Clewd连接报错大全](get_ai/clewd.md)
 
 ## 🧠 类脑Discord相关
