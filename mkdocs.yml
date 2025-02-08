@@ -25,6 +25,7 @@ nav:
   - "类脑和dc相关": 
     - "首页": leinao_about/index.md
     - "一种通用制卡思路": leinao_about/make_card.md
+    - "Discord的特殊用法": leinao_about/discord.md
 theme: 
   name: material
   language: zh
