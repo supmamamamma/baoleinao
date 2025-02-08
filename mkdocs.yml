@@ -16,6 +16,7 @@ nav:
     - "正确导入/导出更新后角色卡的方法": silly/char.md
   - "获取ai渠道": 
     - "首页": get_ai/index.md
+    - "Clewd报错大全": get_ai/clewd.md
 theme: 
   name: material
   language: zh

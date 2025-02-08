@@ -32,7 +32,7 @@
 
 - Pro退款流
 - Gemini模型介绍和使用
-- Clewd连接报错
+- [Clewd连接报错大全](get_ai/clewd.md)
 
 ## 🧠 类脑Discord相关
 
