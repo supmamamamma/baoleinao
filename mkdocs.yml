@@ -15,6 +15,7 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.progress
+    - navigation.tabs
     - navigation.top
     - navigation.indexes
     - search.suggest
@@ -54,6 +55,7 @@ markdown_extensions:
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
+  - pymdownx.magiclink
   - pymdownx.mark
   - pymdownx.tilde
   - tables
@@ -76,3 +78,6 @@ markdown_extensions:
   - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+
+repo_url: https://github.com/songdaopi/down
+repo_name: songdaopi/down
