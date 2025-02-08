@@ -30,7 +30,7 @@
 
 ## 🤖 获取AI渠道
 
-- Pro退款流
+- [Pro退款流](get_ai/pro_refund.md)
 - Gemini模型介绍和使用
 - [Clewd连接报错大全](get_ai/clewd.md)
 

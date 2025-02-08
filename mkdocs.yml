@@ -18,6 +18,7 @@ nav:
   - "获取ai渠道": 
     - "首页": get_ai/index.md
     - "Clewd报错大全": get_ai/clewd.md
+    - "Pro退款流教程": get_ai/pro_refund.md
 theme: 
   name: material
   language: zh
