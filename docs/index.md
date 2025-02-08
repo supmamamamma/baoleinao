@@ -24,9 +24,9 @@
 - [酒馆介绍——萌新向](silly/tavern.md)
 - [VPS酒馆更新](silly/up.md)
 - [正确导入/导出更新后角色卡的方法](silly/char.md)
-- [酒馆常见问题](silly/que.md)(施工中)
+- [酒馆常见问题](silly/que.md)
 - [前端卡问题自查教程](silly/css.md)
-- 解放双手: 用移动设备连接搭建在PC端的酒馆
+- [解放双手: 用移动设备连接搭建在PC端的酒馆](silly/pc.md)(施工中)
 
 ## 🤖 获取AI渠道
 
