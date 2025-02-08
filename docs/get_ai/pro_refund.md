@@ -2,7 +2,7 @@
 
 !!! note "作者：今晚的乌云很深 校订：络络"  
 
-Pro退款流是指通过购买Pro会员，再因为玩法过于涩涩被封号退款 从而来达成免费使用(白嫖)的方法。  
+	Pro退款流是指通过购买Pro会员，再因为玩法过于涩涩被封号退款 从而来达成免费使用(白嫖)的方法。  
 
 **当前充值 Claude Pro 有三种方法：**
 官网：官网直充、官网银联直充  
@@ -66,8 +66,7 @@ Pro退款流是指通过购买Pro会员，再因为玩法过于涩涩被封号�
 2.然后开虚拟信用卡(不懂怎么开卡的可以问虚拟信用卡客服)  
 3.开好之后这个页面(不同平台略有差距) 
 
-<img src="pro_refund/1.jpg" alt="image"  />
-
+![img](pro/1.jpg){ loading=lazy }
 一一对应抄上去就行了，然后点紫色的按钮，订阅即完成。
 
 ### 2.2 银联官网直充
@@ -131,7 +130,7 @@ Pro退款流是指通过购买Pro会员，再因为玩法过于涩涩被封号�
 - 点击紫色充值按钮（Upgrade)
 - 充值结束后建议立即关闭订阅避免夜长梦多
 
-<img src="pro_refund/3.jpg" alt="image"  />
+![img](pro/3.jpg){ loading=lazy }
 
 !!! warning "充值注意事项"
 
@@ -149,9 +148,9 @@ Pro退款流是指通过购买Pro会员，再因为玩法过于涩涩被封号�
 
 - 在浏览器打开一个隐私窗口，登录Claude，打开F12>网络(network)>筛选器输入框中输入chat_>对claude发送一条消息>在F12的窗口下方点一个项目，并寻找请求cookie栏目中以seesionKey=sk-xxx-xxx--xxxxxxxxxxxx-xxxxx-xxxxxxxAA为值的一条，复制下来，这就是你的cookie。
 
-<img src="pro_refund/4.jpg" alt="image"  />
+![img](pro/4.jpg){ loading=lazy }
 
-<img src="pro_refund/5.jpg" alt="image"  />
+![img](pro/5.jpg){ loading=lazy }
 
 - 接下来移步Clewd教程吧w
 
@@ -163,14 +162,19 @@ Pro退款流是指通过购买Pro会员，再因为玩法过于涩涩被封号�
 
 Q: 退款周期是多长？  
 A: 因银行而异，农行次日即可到账，建设银行最慢4-5天  
+
 Q: 为什么充值Pro账号邮箱收不到付款邮件？  
 A: 所有退款和充值邮件发送至付款账号邮箱  
+
 Q: 付款账号被封但充值Pro号存活，退款去向？  
 A: 直接退回银行卡，可登录充值Pro号官网查看  
+
 Q: 使用什么邮箱发送封号请求？  
 A: 使用充值Pro号的账号邮箱  
+
 Q: 充值Pro号订阅期间被封（谷歌/微软封禁）对使用和退款影响？  
 A: 暂无相关案例参考  
+
 Q: 提取饼干应提取哪个账号？  
 A: 提取充值Pro号的饼干  
 
