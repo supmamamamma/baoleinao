@@ -26,7 +26,7 @@ https://discord.com/channels/1134557553011998840/1299721367599448118 的方法
 
 ### 第二种
 
-![img](clewd/4.jog){ loading=lazy }
+![img](clewd/4.jpg){ loading=lazy }
 
 - 原因:无权限使用模型  
 
