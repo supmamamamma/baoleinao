@@ -1,1 +1,5 @@
-.github/workflows/*
+# Virtual Environment
+venv/
+.cache/
+site/
+.DS_Store
