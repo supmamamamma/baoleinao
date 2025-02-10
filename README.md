@@ -4,10 +4,13 @@
 
 1. **Fork仓库**: 首先fork项目仓库到你的GitHub账户。
 2. **本地克隆**: 使用git客户端将fork的仓库克隆到本地机器。
+
     ```sh
     git clone https://github.com/${{ github.actor }}/down
     ```
+
 3. **创建新分支**: 总是在新分支上工作,给它一个描述性的名称。
+
     ```sh
     git checkout -b new-feature-x
     ```
