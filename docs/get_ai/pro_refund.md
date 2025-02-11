@@ -79,12 +79,12 @@
 2.然后开虚拟信用卡(不懂怎么开卡的可以问虚拟信用卡客服)  
 3.开好之后这个页面(不同平台略有差距) 
 
-![img](pro/1.jpg){ loading=lazy }
+![img](pro/1.jpeg){ loading=lazy }
 一一对应抄上去就行了，然后点紫色的按钮，订阅即完成。
 
 ### 2.2 银联官网直充
 
-![img](pro/2.jpg){ loading=lazy }
+![img](pro/2.jpeg){ loading=lazy }
 1.卡号、有效期，安全码直接抄上去  
 2.国家和地区直接百度随便搜一个填上  
 3.然后按紫色按钮订阅验证完事 (我是长期卡没具体操作过)   
@@ -143,7 +143,7 @@
 - 点击紫色充值按钮（Upgrade)
 - 充值结束后建议立即关闭订阅避免夜长梦多
 
-![img](pro/3.jpg){ loading=lazy }
+![img](pro/3.jpeg){ loading=lazy }
 
 !!! warning "充值注意事项"
 
@@ -161,9 +161,9 @@
 
 - 在浏览器打开一个隐私窗口，登录Claude，打开F12>网络(network)>筛选器输入框中输入chat_>对claude发送一条消息>在F12的窗口下方点一个项目，并寻找请求cookie栏目中以seesionKey=sk-xxx-xxx--xxxxxxxxxxxx-xxxxx-xxxxxxxAA为值的一条，复制下来，这就是你的cookie。
 
-![img](pro/4.jpg){ loading=lazy }
+![img](pro/4.jpeg){ loading=lazy }
 
-![img](pro/5.jpg){ loading=lazy }
+![img](pro/5.jpeg){ loading=lazy }
 
 - 接下来移步Clewd教程吧w
 
