@@ -58,7 +58,7 @@ flowchart TD
 显然你不可能去官网，直接给ai打字说：“**哦老天我的下面要着起来了,快给我写一个让我舒服舒服的文章。”**
 
 <figure markdown="span">
-  ![Image title](/img/build/shu.jpg){ loading=lazy }
+  ![Image title](/img/build/shu.jpeg){ loading=lazy }
   <figcaption>图1.1，错误的对话方法</figcaption>
 </figure>
 
@@ -105,7 +105,7 @@ flowchart TD
 按windows徽标+r键，然后在框内输入 `cmd/powershell`然后点击“确定”来打开`cmd/powershell`
 
 <figure markdown="span">
-  ![Image title](/img/build/cmd.jpg){ loading=lazy }
+  ![Image title](/img/build/cmd.jpeg){ loading=lazy }
   <figcaption>图2.1，使用组合键打开cmd</figcaption>
 </figure>
 
@@ -125,7 +125,7 @@ git -v
 1. 像这样提示`git version xxxxxx`
 
 <figure markdown="span">
-  ![Image title](/img/build/gitins.jpg){ loading=lazy }
+  ![Image title](/img/build/gitins.jpeg){ loading=lazy }
   <figcaption>图2.2，成功安装git</figcaption>
 </figure>
 
@@ -153,7 +153,7 @@ winget install --id Git.Git -e --source winget
 然后回车。如果不出意外，应该显示如下：
 
 <figure markdown="span">
-  ![Image title](/img/build/wget.jpg){ loading=lazy }
+  ![Image title](/img/build/wget.jpeg){ loading=lazy }
   <figcaption>图2.4,使用winget安装git</figcaption>
 </figure>
 
@@ -169,7 +169,7 @@ winget install --id Git.Git -e --source winget
     如果你的操作系统是32位的,作者个人建议请放弃安装酒馆。
 
 <figure markdown="span">
-  ![Image title](/img/build/gitweb.jpg){ loading=lazy }
+  ![Image title](/img/build/gitweb.jpeg){ loading=lazy }
   <figcaption>图2.5 在官网下载git安装包</figcaption>
 </figure>
 
@@ -189,7 +189,7 @@ npm -v
 然后回车。
 
 <figure markdown="span">
-  ![Image title](/img/build/node.jpg){ loading=lazy }
+  ![Image title](/img/build/node.jpeg){ loading=lazy }
   <figcaption>图2.6 检查node安装</figcaption>
 </figure>
 
@@ -211,7 +211,7 @@ winget install OpenJS.NodeJS.LTS
 在[官网的下载页面](https://nodejs.org/zh-cn/download)进行下载。
 
 <figure markdown="span">
-  ![Image title](/img/build/nodedown.jpg){ loading=lazy }
+  ![Image title](/img/build/nodedown.jpeg){ loading=lazy }
   <figcaption>图2.7 下载页面</figcaption>
 </figure>
 
@@ -264,9 +264,9 @@ npm config set registry https://registry.npmmirror.com
 
 首先，选择或干脆新建一个文件夹作为安装SillyTavern的地方，然后点击路径，输入cmd来使cmd定位此处。
 
- ![Image title](/img/build/opencmd.jpg){ loading=lazy }
+ ![Image title](/img/build/opencmd.jpeg){ loading=lazy }
 <figure markdown="span">
-  ![Image title](/img/build/install.jpg){ loading=lazy }
+  ![Image title](/img/build/install.jpeg){ loading=lazy }
   <figcaption>图3.2-3.3</figcaption>
 </figure>
 
