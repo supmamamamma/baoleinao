@@ -51,7 +51,7 @@ ssh -v
 
 那么进行到这一步了, 我们先等一下, 先不要急于连接, 已经建立的连接可以通过输入 exit 来退出
 
-![img](vps/exit.jpg){ loading=lazy }
+![img](vps/exit.jpeg){ loading=lazy }
 
 !!! warning "注意"
 
@@ -67,7 +67,7 @@ ssh root@xxx.xxx.xxx.xxx
 
 来登录你的服务器, 过程中会要求输入你的登录密码, 如果你还记得, 那么恭喜你, 你应该可以顺利登录并看到这样的界面
 
-![img](vps/login.jpg){ loading=lazy }
+![img](vps/login.jpeg){ loading=lazy }
 
 接着输入 `nano /etc/ssh/sshd_config` , 使用debian12自带的nano编辑器, 去修改sshd_config
 将Port这一条修改为足够高的不常见端口:
@@ -76,7 +76,7 @@ ssh root@xxx.xxx.xxx.xxx
 
 **(别填个示例的12345!)**
 
-![img](vps/pro.jpg){ loading=lazy }
+![img](vps/pro.jpeg){ loading=lazy }
 
 之后, 使用 ++ctrl+o++ 快捷键来保存修改, 然后使用 ++ctrl+x++ 来退出
 
@@ -92,11 +92,11 @@ sudo systemctl restart sshd
 
 它看起来是这个样子:
 
-![img](vps/ufw.jpg){ loading=lazy }
+![img](vps/ufw.jpeg){ loading=lazy }
 
 点击添加规则：
 
-![img](vps/rules.jpg){ loading=lazy }
+![img](vps/rules.jpeg){ loading=lazy }
 
 来源选择 `全部IPv4地址 或 0.0.0.0/0`
 
@@ -120,7 +120,7 @@ ssh -p 12345 root@xxx.xxx.xxx.xxx
 
 此时, 让我们回到win中, 输入 exit , 来退出登录, 结束ssh会话。
 
-![img](vps/gen.jpg){ loading=lazy }
+![img](vps/gen.jpeg){ loading=lazy }
 
 既然是密钥对登录, 显然, 我们需要一对密钥, 公钥与私钥
 openssh已经自带了生成密钥对的功能
@@ -140,11 +140,11 @@ ssh-keygen -t ed25519 -f "C:\你的\目标\路径\文件名"
 
 什么都不要动不要填, 直到出现如下内容:
 
-![img](vps/key.jpg){ loading=lazy }
+![img](vps/key.jpeg){ loading=lazy }
 
 于是, 你便可以进入这个目录去寻找你刚才生成的密钥对了
 
-![img](vps/path.jpg){ loading=lazy }
+![img](vps/path.jpeg){ loading=lazy }
 
 图中的 id_ed25519 与 id_25519.pub 就是你的私钥与公钥,
 
@@ -157,7 +157,7 @@ ssh-keygen -t ed25519 -f "C:\你的\目标\路径\文件名"
 
 使用文本软件打开它, ++ctrl+a++ 全选, 然后 ++ctrl+c++ 复制里面的内容
 
-![img](vps/copy.jpg){ loading=lazy }
+![img](vps/copy.jpeg){ loading=lazy }
 
 连接登录你的服务器, 然后输入
 ```
@@ -166,7 +166,7 @@ nano .ssh/authorized_keys
 
 来编辑配置你的密钥文件(如果不存在nano会自动创建).
 
-![img](vps/nano.jpg){ loading=lazy }
+![img](vps/nano.jpeg){ loading=lazy }
 
 将你的密钥粘贴进去(ctrl + v), 然后使用 ctrl + o 保存修改, ctrl + x 关闭
 
@@ -199,7 +199,7 @@ ssh -i C:\你的\目标\路径\私钥文件名" -p 112345 root@xxx.xxx.xxx.xxx
 
 当然, 这一串太过冗长了, 过于麻烦了,对此, 解决方案就是:
 
-![img](vps/config.jpg)
+![img](vps/config.jpeg)
 
 在这个目录下创建一个名为 config 的文件(没有任何后缀)
 以这个格式创建一份配置, 
@@ -237,7 +237,7 @@ apt install git
 
 出现这样的内容即是成功, 可输入`git -v` 进行验证
 
-![img](vps/git.jpg){ loading=lazy }
+![img](vps/git.jpeg){ loading=lazy }
 
 安装过程中可能会卡住询问[yes/no]或[y/n], 需要你确认是否要安装, 请输入 yes 或 y 并回车确认
 对于其他linux发行版
@@ -247,14 +247,14 @@ apt install git
 
 你只需要跟随 node.js 官网的内容走即可
 
-![imag](vps/node.jpg){ loading=lazy }
+![imag](vps/node.jpeg){ loading=lazy }
 
 输入这条命令输入并回车: 
 ```
 curl -o- https://fnm.vercel.app/install | bash
 ```
 
-![img](vps/pak.jpg){ loading=lazy }
+![img](vps/pak.jpeg){ loading=lazy }
 
 !!! success "注意:"
 
@@ -268,7 +268,7 @@ curl -o- https://fnm.vercel.app/install | bash
 `curl -o- https://fnm.vercel.app/install | bash`
 的成功输出将是: 
 
-![img](vps/oup.jpg){ loading=lazy }
+![img](vps/oup.jpeg){ loading=lazy }
 
 
 根据提示, 输入
@@ -288,7 +288,7 @@ fnm install 22
 最后使用 `node -v` 和 `npm -v`
 查验是否正确安装, 理应返回各自的版本号
 
-![imh](vps/npmin.jpg){ loading=lazy }
+![imh](vps/npmin.jpeg){ loading=lazy }
 
 ### 2.3 酒馆 SillyTavern 
 
@@ -310,12 +310,12 @@ git clone https://github.com/SillyTavern/SillyTavern -b staging
 进行克隆部署 release 版本或 staging 版本, 自行二选其一
 在完成克隆之后, 你应当能看见如下输出:
 
-![imh](vps/clone.jpg){ loading=lazy }
+![imh](vps/clone.jpeg){ loading=lazy }
 
 使用 ls 命令查验
 确保 SillyTavern 文件夹存在
 
-![ha](vps/ls.jpg){ loading=lazy }
+![ha](vps/ls.jpeg){ loading=lazy }
 
 使用
 ```
@@ -333,7 +333,7 @@ bash start.sh
 
 命令运行启动脚本, 其会在启动时检查js依赖, 并自动安装依赖内容.
 
-![gh](vps/sill.jpg){ loading=lazy }
+![gh](vps/sill.jpeg){ loading=lazy }
 
 在 bash start.sh 后你应当看见如上输出
 
@@ -359,7 +359,7 @@ nano config.yaml
 
 进行编辑, 编辑完成后使用 ctrl + o 保存并使用 ctrl + x 关闭nano
 
-![in](vps/yal.jpg){ loading=lazy }
+![in](vps/yal.jpeg){ loading=lazy }
 
 在config中, true 代表打开, false 代表关闭
 
