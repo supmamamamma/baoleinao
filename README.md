@@ -32,6 +32,3 @@
 2. 使用[约定式提交消息格式](https://www.conventionalcommits.org/en/v1.0.0/)
 3. 更新文档。
 4. 描述所做的更改。
-
-
-## 
