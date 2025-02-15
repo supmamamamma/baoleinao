@@ -44,7 +44,7 @@ ssh -v
 ```
 来查看你的ssh版本
 
-![img](sshcn.jpeg){ loading=lazy }
+![img](vps/sshcn.jpeg){ loading=lazy }
 
 那么在此之后, 你就可以通过 ssh root@xxx.xxx.xxx.xxx 来登录你的服务器
 其中, @前面的部分为你的用户名, 一般新服务器默认为root
