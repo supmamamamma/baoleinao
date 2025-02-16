@@ -73,3 +73,7 @@
 - 勾选你想使用的全局世界书
 
 ![img](lorebook/6.jpeg){ loading=lazy }
+
+- 勾选后，安卓版会显示项数，电脑版会显示世界书名称
+
+![img](lorebook/7.jpeg){ loading=lazy }
