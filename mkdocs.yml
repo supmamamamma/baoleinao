@@ -17,6 +17,7 @@ nav:
     - "前端卡问题自查教程": silly/css.md
     - "酒馆常见问题": silly/que.md
     - "解放双手: 用移动设备连接搭建在PC端的酒馆": silly/pc.md 
+    - "世界书相关": silly/lorebook.md
   - "获取ai渠道": 
     - "首页": get_ai/index.md
     - "Clewd报错大全": get_ai/clewd.md
