@@ -27,6 +27,7 @@
 - [酒馆常见问题](silly/que.md)
 - [前端卡问题自查教程](silly/css.md)
 - [解放双手: 用移动设备连接搭建在PC端的酒馆](silly/pc.md)
+- [世界书相关](silly/lorebook.md)
 
 ## 🤖 获取AI渠道
 
