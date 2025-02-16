@@ -86,4 +86,10 @@
 ![img](lorebook/9.jpeg){ loading=lazy }
 ![img](lorebook/10.jpeg){ loading=lazy }
 
+点击OK，我们会看到角色卡界面的小地球变绿了，
+
+这说明世界书和角色卡绑定成功了🎉。再次点击绿色小地球，酒馆会跳转到世界书页面。
+
+#### 2.3.3 自带绑定的角色世界书
+
 
