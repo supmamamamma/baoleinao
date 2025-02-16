@@ -81,3 +81,9 @@
 #### 2.3.2 设置角色世界书
 
 角色世界书需要绑定角色卡，步骤不同于全局世界书。我们首先切换到**角色卡界面**：
+
+![img](lorebook/8.jpeg){ loading=lazy }
+![img](lorebook/9.jpeg){ loading=lazy }
+![img](lorebook/10.jpeg){ loading=lazy }
+
+
