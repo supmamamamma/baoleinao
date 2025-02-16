@@ -64,4 +64,26 @@
 
 	> 角色世界书：只对它绑定的角色卡起效，例如海绵宝宝的故事背景。
 
+#### 2.3.1 设置全局世界书
+
+- 点击后弹出世界书选项框
+
+![img](lorebook/5.jpeg){ loading=lazy }
+
+- 勾选你想使用的全局世界书
+
+![img](lorebook/6.jpeg){ loading=lazy }
+
+- 勾选后，安卓版会显示项数，电脑版会显示世界书名称
+
+![img](lorebook/7.jpeg){ loading=lazy }
+
+#### 2.3.2 设置角色世界书
+
+角色世界书需要绑定角色卡，步骤不同于全局世界书。我们首先切换到**角色卡界面**：
+
+![img](lorebook/8.jpeg){ loading=lazy }
+![img](lorebook/9.jpeg){ loading=lazy }
+![img](lorebook/10.jpeg){ loading=lazy }
+
 
