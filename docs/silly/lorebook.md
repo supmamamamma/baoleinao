@@ -69,3 +69,7 @@
 - 点击后弹出世界书选项框
 
 ![img](lorebook/5.jpeg){ loading=lazy }
+
+- 勾选你想使用的全局世界书
+
+![img](lorebook/6.jpeg){ loading=lazy }
