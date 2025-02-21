@@ -152,3 +152,14 @@
 
 	本章尽量解释清楚上下文的概念。如果你很清楚上下文的概念，请跳转至：[条目参数](https://sqivg8d05rm.feishu.cn/wiki/ZJ9Yw0X7JipJrlkAoT0cku54nMb#WxoudlSrRoq8DNxYSZrct6MSnig)。如读完此篇仍对上下文有疑问，可结合此条目浏览：[重要概念：上下文](https://sqivg8d05rm.feishu.cn/wiki/UmWhwf6zviRZ7SkC1rhcIgFXnnd#Gs4KdDxuDogcVWxTrtvc5iBunn5)。
 
+#### 3.1.1 提示 (Prompt)
+
+我相信有的朋友并不知道 prompt 的概念。虽然 prompt 应该翻译为提示，不过我们一般仍称其为 prompt。
+
+prompt 的作用是让 AI 按照用户输入的提示去输出内容。简而言之，基本上用户输入 AI 的任何信息都属于 prompt。
+
+那么“**用户输入 AI 的任何信息**”包括什么呢？如果你使用 Claude 模型，那么在“预设”界面，你就可以看到它列出了默认的 prompts：
+
+![img](lorebook/17.jpeg){ loading=lazy }
+
+
