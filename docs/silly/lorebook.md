@@ -144,5 +144,11 @@
 
 ### 3.1 上下文的概念
 
+在进阶教程之前，上下文 (Context) 是你必须知道的重要概念。你可以把上下文理解为“记忆”。
 
+我们通常说 Claude 的记忆是100k 25k，就是指 Claude 的上下文容量为25k tokens。过多的 tokens 会被清出上下文，也就是我们常说的“记不住了”。
+
+!!! abstract "提示"
+
+	本章尽量解释清楚上下文的概念。如果你很清楚上下文的概念，请跳转至：[条目参数](https://sqivg8d05rm.feishu.cn/wiki/ZJ9Yw0X7JipJrlkAoT0cku54nMb#WxoudlSrRoq8DNxYSZrct6MSnig)。如读完此篇仍对上下文有疑问，可结合此条目浏览：[重要概念：上下文](https://sqivg8d05rm.feishu.cn/wiki/UmWhwf6zviRZ7SkC1rhcIgFXnnd#Gs4KdDxuDogcVWxTrtvc5iBunn5)。
 
